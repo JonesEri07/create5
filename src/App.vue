@@ -6,6 +6,9 @@
       <router-link to="/login">Login</router-link>
     </div>
     <router-view/>
+    <footer id="sticky">
+      <a class="pure-menu-link" href="https://github.com/JonesEri07/create5">git JonesEri07</a>
+    </footer>
   </div>
 </template>
 
@@ -28,5 +31,23 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.pure-menu-link {
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: 800;
+}
+
+#sticky {
+  width: 100%;
+  height: 25px;
+  background: blue;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 </style>
